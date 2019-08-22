@@ -6,29 +6,42 @@
     <body>
         <h1>Register</h1>
 
-        <label>First Name:</label>
-        <input type="text" placeholder="Escribe tu nombre">
+        <form>
 
-        <label>Last Name:</label>
-        <input type="text" placeholder="Escribe tu apellido">
+                
+                <label>First Name:</label>
+                <input type="text" placeholder="Escribe tu nombre">
+                
+                <label>Last Name:</label>
+                <input type="text" placeholder="Escribe tu apellido">
+                
+            <div>
+                <label>Male</label>
+                <input type="radio" name="gender">
+                <label>Female</label>
+                <input type="radio" name="gender">
+                <label>Other</label>
+                <input type="radio" name="gender">
+            </div>
+            <div>
+                
+                <label>Email</label>
+                <input type="email" placeholder="Ejemplo@correo.com">
+                <label>Password</label>
+                <input type="password" placeholder="contraseña">
+                
+            </div>
+            
+            <div>
+                <label>Birthday:</label>
+                <input type="time" value="Month" >
+            </div>
+            
+            <div>
+                <input type="submit" value="Entrar">
+            </div>
         
-        <div>
-            <label>Male</label>
-            <input type="radio" name="gender">
-            <label>Female</label>
-            <input type="radio" name="gender">
-            <label>Other</label>
-            <input type="radio" name="gender">
-        </div>
-        
-        <label>Email</label>
-        <input type="email" placeholder="Ejemplo@correo.com">
-        <label>Password</label>
-        <input type="password" placeholder="contraseña">
-        
-        <label>Birthday:</label>
-
-
+        </form>
         <a href="index.html">Inicio</a>
         <p>
             <a href="https://validator.w3.org/check?uri=referer"><img
