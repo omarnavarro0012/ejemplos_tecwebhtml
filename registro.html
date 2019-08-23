@@ -6,36 +6,36 @@
     <body>
         <h1>Register</h1>
 
-        <form>
+        <form method="GET">
+ 
 
-                
-                <label>First Name:</label>
-                <input type="text" placeholder="Escribe tu nombre">
-                
-                <label>Last Name:</label>
-                <input type="text" placeholder="Escribe tu apellido">
-                
+            <label for="first name">First Name:</label>
+            <input type="text" name="first name" placeholder="Escribe tu nombre" id="first name">
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="last name" placeholder="Escribe tu apellido" id="lastname">
+            
             <div>
-                <label>Male</label>
-                <input type="radio" name="gender">
-                <label>Female</label>
-                <input type="radio" name="gender">
-                <label>Other</label>
-                <input type="radio" name="gender">
+                <!--se puso el mismo name para poder seleccionar solo una opcion-->
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female">
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other">
             </div>
             <div>
                 
-                <label>Email</label>
-                <input type="email" placeholder="Ejemplo@correo.com">
-                <label>Password</label>
-                <input type="password" placeholder="contraseña">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Ejemplo@correo.com" id="email">
+                <label for="pass">Password</label>
+                <input type="password" placeholder="contraseña" id="pass">
                 
             </div>
             
             <div>
                 <label>Birthday:</label>
-                <input type="number" placeholder="Month" max="12" min="1">
-                <input type="number" placeholder="Day" >
+                <input type="number" placeholder="Month" max="12" min="1" >
+                <input type="number" placeholder="Day">
                 <input type="number" placeholder="Year">
             </div>
             
