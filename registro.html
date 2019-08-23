@@ -10,9 +10,9 @@
  
 
             <label for="first name">First Name:</label>
-            <input type="text" name="first name" placeholder="Escribe tu nombre" id="first name">
+            <input type="text" name="first name" placeholder="your first name" id="first name">
             <label for="lastname">Last Name:</label>
-            <input type="text" name="last name" placeholder="Escribe tu apellido" id="lastname">
+            <input type="text" name="last name" placeholder="your last name" id="lastname" >
             
             <div>
                 <!--se puso el mismo name para poder seleccionar solo una opcion-->
@@ -25,23 +25,59 @@
             </div>
             <div>
                 
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input type="email" placeholder="Ejemplo@correo.com" id="email">
-                <label for="pass">Password</label>
-                <input type="password" placeholder="contraseña" id="pass">
+                <label for="pass">Password:</label>
+                <input type="password" placeholder="contraseña" id="pass" required minlength="4">
                 
             </div>
             
             <div>
                 <label>Birthday:</label>
-                <input type="number" placeholder="Month" max="12" min="1" >
-                <input type="number" placeholder="Day">
-                <input type="number" placeholder="Year">
+                <select name="month" id="">
+                    <option value="">Month</option>
+                    <option value="">-----</option>
+                    <option value="">Jan</option>
+                    <option value="">Feb</option>
+                    <option value="">Mar</option>
+                    <option value="">Apr</option>
+                    <option value="">May</option>
+                    <option value="">Jun</option>
+                    <option value="">Jul</option>
+                    <option value="">Aug</option>
+                    <option value="">Sep</option>
+                    <option value="">Oct</option>
+                    <option value="">Nov</option>
+                    <option value="">Dec</option>
+                </select>
+                <select name="day" id="">
+                    <option>Day</option>
+                    <option>-----</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+
+                <select name="year" id="">
+                        <option value="">Year</option>
+                        <option value="">-----</option>
+                        <option value="">1995</option>
+                        <option value="">1996</option>
+                        <option value="">1997</option>
+                        <option value="">1998</option>
+                        <option value="">1999</option>
+                        <option value="">2000</option>
+    
+                </select>
+    
+                
             </div>
             
             <div>
-                <label>I agree to terms and conditios:</label>
-                <input type="radio">
+                <label for="termsandconditiosn">I agree to terms and conditios:</label>
+                <input type="checkbox" id="termsandconditiosn">
             </div>
 
             <div>
